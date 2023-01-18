@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+//#include  "random.h" TODO
 
 
 
 int main()
 {
+    // randchar() in random.c
+    // return random letter TODO
 	int a;
 
 	/* seed the randomizer */
