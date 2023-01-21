@@ -1,24 +1,27 @@
+//
+// Created by Sunny on 1/20/2023.
+//
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-//#include  "random.h" TODO
-
+#include "random.h"
 
 
 int main()
 {
-    // randchar() in random.c
-    // return random letter TODO
-	int a;
+    int a;
+    int n;
 
-	/* seed the randomizer */
-	srand( (unsigned)time(NULL) );
+    /* seed the randomizer */
+    srand( (unsigned)time(NULL) );
 
-	printf("Today's random word: ");
-	for(a=0;a<7;a++)
-		putchar( randchar() );
-	putchar('\n');
+    printf("Today's random word: ");
+    for(a=0;a<7;a++)
+        putchar( randchar(n) );
+    putchar('\n');
 
-	return(0);
+    printf("%c", randchar(n));
+
+    return(0);
 }
-

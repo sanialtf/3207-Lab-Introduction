@@ -1,18 +1,20 @@
 //
 // Created by Sunny on 1/18/2023.
 //
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 
 //funct randchar() TODO
 // returns random char from A - Z
 // char is used in main to generate
 // random 7 letterword
 
-char randchar(){
-    srand(time(NULL));
-    (rand()%(90-65))+65;
+char randchar(int n){
+
+    char alphabet[26] = { 'A', 'B', 'C', 'D', 'E', 'F', 'G',
+                           'H', 'I', 'J', 'K', 'L', 'M', 'N',
+                           'O', 'P', 'Q', 'R', 'S', 'T', 'U',
+                           'V', 'W', 'X', 'Y', 'Z' };
+    return alphabet[n % 26];;
 
 }
 
